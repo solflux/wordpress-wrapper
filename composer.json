@@ -1,0 +1,13 @@
+{
+    "name": "solflux/wordpress-wrapper",
+    "description": "Wrapper API for WordPress functions. Allows for unit testing and better plugin/theme development.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Hall",
+            "email": "github@solflux.co.uk"
+        }
+    ],
+    "require": {}
+}
