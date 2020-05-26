@@ -36,7 +36,7 @@ class WordPress
                 add_management_page(
                     $page->getPageTitle(),
                     $page->getMenuTitle(),
-                    $page->getCapability(),
+                    $page->getRequiredCapability(),
                     $page->getMenuSlug(),
                     $page->renderer(),
                     $page->getMenuPosition()

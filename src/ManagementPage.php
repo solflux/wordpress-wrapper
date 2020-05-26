@@ -56,6 +56,6 @@ interface ManagementPage
      *
      * @return string
      */
-    public function getCapability(): string;
+    public function getRequiredCapability(): string;
 
 }
