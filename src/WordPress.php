@@ -2,9 +2,9 @@
 
 namespace Wordpress;
 
-use Wordpress\PostType\PostType;
+use Solflux\WordPress\PostType;
 
-class Wordpress
+class WordPress
 {
     public function registerPostType(PostType $type)
     {

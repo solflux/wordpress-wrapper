@@ -1,6 +1,8 @@
 <?php
 
-namespace Wordpress\PostType;
+namespace Solflux\WordPress\PostType;
+
+use Wordpress\Internationalizer;
 
 class Labels
 {

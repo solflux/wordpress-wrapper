@@ -1,6 +1,6 @@
 <?php
 
-namespace Wordpress;
+namespace Solflux\WordPress;
 
 use function _x;
 

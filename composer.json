@@ -9,5 +9,10 @@
             "email": "github@solflux.co.uk"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Solflux\\WordPress\\": "src"
+        }
+    }
 }

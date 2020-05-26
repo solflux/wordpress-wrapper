@@ -1,8 +1,9 @@
 <?php
 
-namespace Wordpress\PostType;
+namespace Solflux\WordPress;
 
-use Supports;
+use Solflux\WordPress\PostType\Labels;
+use Solflux\WordPress\PostType\Supports;
 
 class PostType
 {

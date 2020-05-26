@@ -1,6 +1,6 @@
 <?php
 
-namespace Wordpress\PostType;
+namespace Solflux\WordPress\PostType;
 
 class Supports
 {
