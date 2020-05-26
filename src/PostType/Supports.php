@@ -197,16 +197,16 @@ class Supports
     public function toArray(): array
     {
         return []
-               + $this->title ? ['title'] : []
-               + $this->editor ? ['editor'] : []
-               + $this->revisions ? ['revisions'] : []
-               + $this->trackbacks ? ['trackbacks'] : []
-               + $this->author ? ['author'] : []
-               + $this->excerpt ? ['excerpt'] : []
-               + $this->thumbnail ? ['thumbnail'] : []
-               + $this->comments ? ['comments'] : []
-               + $this->customFields ? ['custom-fields'] : []
-               + $this->pageAttributes ? ['page-attributes'] : []
-               + $this->postFormats ? ['post-formats'] : [];
+               + ($this->title ? ['title'] : [])
+               + ($this->editor ? ['editor'] : [])
+               + ($this->revisions ? ['revisions'] : [])
+               + ($this->trackbacks ? ['trackbacks'] : [])
+               + ($this->author ? ['author'] : [])
+               + ($this->excerpt ? ['excerpt'] : [])
+               + ($this->thumbnail ? ['thumbnail'] : [])
+               + ($this->comments ? ['comments'] : [])
+               + ($this->customFields ? ['custom-fields'] : [])
+               + ($this->pageAttributes ? ['page-attributes'] : [])
+               + ($this->postFormats ? ['post-formats'] : []);
     }
 }
