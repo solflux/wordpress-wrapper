@@ -5,6 +5,7 @@ namespace Solflux\WordPress;
 use function add_action;
 use function register_post_type;
 use function register_taxonomy;
+use function add_management_page;
 
 class WordPress
 {
