@@ -1,8 +1,6 @@
 <?php
 
-namespace Wordpress;
-
-use Solflux\WordPress\PostType;
+namespace Solflux\WordPress;
 
 class WordPress
 {
