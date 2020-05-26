@@ -2,7 +2,7 @@
 
 namespace Solflux\WordPress\PostType;
 
-use Wordpress\Internationalizer;
+use Solflux\WordPress\Internationalizer;
 
 class Labels
 {

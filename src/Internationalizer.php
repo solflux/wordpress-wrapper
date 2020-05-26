@@ -3,6 +3,7 @@
 namespace Solflux\WordPress;
 
 use function _x;
+use function __;
 
 class Internationalizer
 {
