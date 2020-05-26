@@ -86,7 +86,7 @@ class Taxonomy
     /**
      * @return array
      */
-    public function toArray(): array
+    public function asConfigArray(): array
     {
         return [
             'label' => $this->label,

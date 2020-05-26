@@ -234,7 +234,7 @@ class PostType
     /**
      * @return array
      */
-    public function asArray(): array
+    public function asConfigArray(): array
     {
         return [
             'labels' => $this->labels->toArray(),
