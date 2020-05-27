@@ -246,7 +246,7 @@ class PostType
             ],
             'capability_type' => 'post',
             'menu_position' => $this->menuPosition,
-            'menu-icon' => $this->menuIcon,
+            'menu_icon' => $this->menuIcon,
             'show_in_menu' => $this->showInMenu,
             'show_ui' => $this->showUi,
             'supports' => $this->supports->toArray()
