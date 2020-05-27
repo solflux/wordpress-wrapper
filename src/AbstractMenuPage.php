@@ -2,7 +2,7 @@
 
 namespace Solflux\WordPress;
 
-abstract class AbstractManagementPage implements ManagementPage
+abstract class AbstractMenuPage implements MenuPage
 {
     /**
      * @var string

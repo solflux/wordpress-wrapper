@@ -12,7 +12,7 @@ use Closure;
  *
  * @package Solflux\WordPress
  */
-interface ManagementPage
+interface MenuPage
 {
     /**
      * Return a functional responsible for rendering the page itself.

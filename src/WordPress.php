@@ -5,7 +5,8 @@ namespace Solflux\WordPress;
 use function add_action;
 use function register_post_type;
 use function register_taxonomy;
-use function add_management_page;
+use function add_menu_page;
+use function add_submenu_page;
 
 class WordPress
 {
@@ -29,20 +30,35 @@ class WordPress
         );
     }
 
-    public function registerManagementPage(ManagementPage $page)
+    public function registerMenuPage(MenuPage $page, array $context = [], string $parent = null)
     {
-        add_action(
-            Hooks::PLUGIN_INITIALIZATION,
-            function () use ($page) {
-                add_management_page(
-                    $page->getPageTitle(),
-                    $page->getMenuTitle(),
-                    $page->getRequiredCapability(),
-                    $page->getMenuSlug(),
-                    $page->renderer(),
-                    $page->getMenuPosition()
-                );
-            }
-        );
+        if ($parent !== null) {
+            $registrationFunction =
+                function () use ($page, $context, $parent) {
+                    add_submenu_page(
+                        $parent,
+                        $page->getPageTitle(),
+                        $page->getMenuTitle(),
+                        $page->getRequiredCapability(),
+                        $page->getMenuSlug(),
+                        $page->renderer($context),
+                        $page->getMenuPosition()
+                    );
+                };
+        } else {
+            $registrationFunction =
+                function () use ($page, $context) {
+                    add_menu_page(
+                        $page->getPageTitle(),
+                        $page->getMenuTitle(),
+                        $page->getRequiredCapability(),
+                        $page->getMenuSlug(),
+                        $page->renderer($context),
+                        $page->getMenuPosition()
+                    );
+                };
+        }
+
+        add_action(Hooks::PLUGIN_INITIALIZATION, $registrationFunction);
     }
 }
