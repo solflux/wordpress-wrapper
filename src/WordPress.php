@@ -59,6 +59,6 @@ class WordPress
                 };
         }
 
-        add_action(Hooks::PLUGIN_INITIALIZATION, $registrationFunction);
+        add_action(Hooks::ADMIN_MENU, $registrationFunction);
     }
 }
